@@ -1,0 +1,217 @@
+/* PC */
+@media (min-width:63.9375rem)
+{
+    .mobie-menu{
+        display: none;
+    }
+}
+
+
+/* Tablet */
+
+@media (min-width:46.25em) and (max-width:63.9375em)
+{
+    html{
+        width: 100%;
+       /* margin-right: -8px; */
+    }
+    .bag , #search{
+        display: none;
+    }
+
+    #content-about{
+        padding: 64px 16px !important;
+        max-width: 100%;
+    }
+
+    .mobie-menu{
+        display: none;
+    }
+}
+
+/* Tablet and mobie */
+
+@media (max-width:63.9375em)
+{
+    .btn {
+        padding: 16px 15px;
+        font-size: 16px;
+    }
+
+    .laptop-heading {
+        font-size: 20px;
+    }
+
+    .form1, .form3 {
+        padding: 14px 11px;
+    }
+
+    .btn-submit {
+        padding: 13px 13px;
+    }
+
+    .text-contact {
+        line-height: 2;
+    }
+    
+
+    
+}
+
+/* Mobie */
+
+@media (max-width:46.1875em)
+{
+    #header{
+        /* height: auto; */
+       overflow: hidden;
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #search ,#search-icon{
+        display: none;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    #nav > .subnav > li:first-child{
+        display: inline-block;
+    }
+
+    #nav .subnav {
+        position: initial;
+        background-color: rgb(220 232 219);
+
+    }
+
+    #nav .subnav a {
+        font-size: 17px;
+        color: black;
+    }
+
+    .subnav li {
+        padding: 5px 50px;
+    }
+
+    #nav .sub-subnav {
+        position: initial;
+    }
+
+    .mobie-menu{
+            position: absolute;
+            line-height: 50px;
+            top:0;
+            right: 0px;
+            padding: 0 20px;
+            background-color:black;
+            cursor: pointer;
+    }
+
+    .mobie-menu .ti-mobie-menu {
+        font-size: 25px;
+        color: aliceblue;
+    }
+
+    .mobie-menu:hover {
+        background-color:rgb(243, 239, 239) ;
+    }
+
+    .mobie-menu:hover .ti-mobie-menu{
+        color: black;
+    }
+
+    .s-col-ful{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .img-content-about {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #content #content-about{
+        padding-bottom: 64px !important;
+    }
+
+    #content .cnt {
+        font-size: 17px;
+        color: chocolate;
+    }
+
+    .content-heading {
+        font-size: 24px;
+    }
+    .product-list li {
+        font-size: 16px;
+    }
+
+    .s1-col-ful{
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    img.img-map {
+        margin-top: 36px;
+    }
+
+    .s-full-width{
+        width: 100%;
+    }
+
+    .content-contact {
+        padding: 0 32px 32px;
+    }
+
+    .modal-container{
+        max-width: 90%;
+    }
+
+    .btn-submit {
+        padding: 13px 13px;
+        width: 100%;
+    }
+
+    .text-contact {
+        font-size: 16px;
+    }
+
+    .support {
+        font-size: 13px;
+    }
+
+    .modal-header {
+        padding: 20px 15px;
+        font-size: 23px;
+    }
+
+    .label1 {
+        font-size: 15px;
+    }
+
+    .input1 {
+        padding: 7px 17px;
+        font-size: 15px;
+    }
+
+    .modal-button {
+        padding: 7px 0px;
+        font-size: 18px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .modal-text {
+        font-size: 15px;
+    }
+
+
+    
+
+}

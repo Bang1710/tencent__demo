@@ -1,0 +1,31 @@
+<div id="header">
+        <ul id="nav">
+            <li><a href="">Trang chủ</a></li>
+            <li><a href="">Giới thiệu</a></li>
+            <li>
+                <a href="">Sản phẩm</a>
+                <ul class="subnav">
+                    <li>
+                        <a href="">Điện thoại</a>
+                        <ul class="sub-subnav">
+                            <li><a href="">Apple</a></li>
+                            <li><a href="">Samsung</a></li>
+                            <li><a href="">Bkav</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Máy tính cá nhân</a>
+                        <ul class="sub-subnav">
+                            <li><a href="">HP</a></li>
+                            <li><a href="">Dell</a></li>
+                            <li><a href="">Thinkpad</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Máy tính bảng</a></li>
+                </ul>
+            </li>
+            <li><a href="">Dịch vụ</a></li>
+            <li><a href="">Liên hệ</a></li>
+        </ul>
+
+    </div>

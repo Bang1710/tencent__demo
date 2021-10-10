@@ -1,0 +1,600 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    /* margin-right: -8px; */
+}
+
+.clear{
+    clear: both;
+}
+
+
+
+.col{
+    float: left;
+    padding: 0 8px;
+    
+}
+
+
+
+.col1{
+    float: left;
+    padding: 0 16px;
+}
+
+.text-content{
+    text-align: center;
+}
+
+.row{
+    margin-left:-8px ;
+    margin-right: -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.row1{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-third{
+    width: 33.33333%;
+}
+
+.col-two{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+
+.mt-16{
+    margin-top: 16px;
+}
+
+#main{
+    overflow: hidden;
+}
+
+#header{
+    position: fixed;
+    height: 50px;
+    background-color:gray ;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* overflow: hidden; */
+    appearance: none;
+}
+
+#nav {
+     display: inline-block;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav, .subnav{
+    list-style-type: none;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    left: 0;
+    top:100%;
+    background-color: floralwhite;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 160px;
+}
+
+#nav li:hover .subnav{
+    display:block ;
+}
+
+#nav > li >a {
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+#nav >  li:hover > a,
+#nav .subnav > li:hover > a{
+    color:chartreuse;
+    background-color: black;
+    display: block;
+}
+
+#nav  li  a {
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 50px;
+    padding: 0 25px;
+
+}
+ #nav .subnav a {
+    /* color:chartreuse; */
+     padding: 0 10px;
+     font-size: 15px;
+     
+ }
+
+/* Cấp 3 */
+
+.sub-subnav a{
+     padding: 10px;
+}
+
+.subnav li {
+    position: relative;
+}
+
+.sub-subnav {
+    background-color: floralwhite;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 1px);
+    min-width: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.subnav li:hover .sub-subnav {
+    display: block;
+}
+
+.sub-subnav > li:hover >a{
+    color:white;
+    background-color:gray;
+    display: block;
+}
+
+/* Dấu tích xuống */
+#nav .nav-ti{
+    font-size: 15px;
+}
+
+#header .ti{
+    font-size: 15px;
+}
+
+#search-btn {
+    position: absolute;
+    line-height: 50px;
+    top:0;
+    right: 0;
+    padding: 0 20px;
+    background-color: red;
+    cursor: pointer;
+}
+
+#search-btn .ti-shop{
+    font-size: 30px;
+    color: yellow;
+}
+
+#search-icon {
+    position: absolute;
+    line-height: 50px;
+    top:0;
+    right: 0px;
+    padding: 0 25px;
+    background-color:rgb(136, 131, 131);
+    cursor: pointer;
+}
+
+#search-icon .ti-scr{
+    font-size: 25px;
+}
+
+#search-icon:hover{
+    background-color: red;
+    color: yellow;
+}
+
+#search{
+    position: absolute;
+    background-color:black;
+    top:0;
+    right: 66px;
+    line-height: 50px;
+}
+
+.namesearch{
+    padding: 15px ;
+}
+
+#slider {
+    padding-top: 67%;
+    background-image: url(https://trithucvn.org/wp-content/uploads/2020/08/tencent_shutterstock_1775180234.jpg);
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 50px;
+}
+
+#slider-content{
+    position: absolute;
+    font-size: 15px;
+    bottom: 7px;
+    left: 0;
+    right: 0;
+    color:rgb(228, 238, 240);
+}
+
+#slider-content .content-text1 {
+    width: 100%;
+    padding: 0px 20px;
+    text-align: center;
+}
+
+#content #content-about{
+   padding: 64px 16px 128px;
+   width: 800px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 32px;
+   max-width: 100%;
+}
+
+ .content-heading{
+    text-align: center;
+    margin: px 0px;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 4px;
+    color:brown;
+}
+#contact-about .content-slogan,
+#content-about .content-slogan{
+    text-align: center;
+    margin: 15px 0px;
+    font-size: 20px;
+    font-style: italic;
+    /* Chữ nghiêng */
+    opacity: 0.6;
+    /* Độ mờ của chữ  */
+}
+
+#content-about .content-nd{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 15px;
+    text-align: justify;
+    /* Căn đều 2 bên */
+    line-height: 1.6;
+    /* Khoảng cách giưax các dòng  */
+}
+
+#content .img{
+    float: left;
+    text-align: center;
+}
+
+#content .img-content {
+    padding: 32px 0;
+    width: 100%;
+}
+
+#content .cnt{
+    margin: 15px 0;
+    font-size: 15px;
+    font-style: italic;
+    color: blue;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+#content .product {
+    background-color: black;
+}
+
+.product-list{
+    background-color: aliceblue;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.product-list li {
+    padding: 10px 16px;
+    opacity: 0.6;
+    font-size: 20px;
+    border-bottom: 2px solid #000;
+}
+
+.support{
+        background-color: red;
+        color: aliceblue;
+        padding: 6px 8px;
+        margin-left: 16px;
+        font-size: 15px;
+}
+
+.btn{
+    text-decoration: none;
+    background-color:black;
+    color: white;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 10px;
+    border: none;
+}
+
+.btn:hover{
+    color: #000;
+    background-color:darkgray;
+}
+
+#content .nd-laptop{
+    padding-bottom: 64px;
+ }
+
+#content .img-laptop{
+    width: 100%;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+}
+
+.img-laptop:hover{
+    opacity: 0.6;
+}
+
+.laptop-content{
+    background-color: white;
+    padding: 8px 16px;
+}
+
+.laptop-heading{
+        font-size: 17px;
+        padding: 5px 0;
+        color: red;
+        font-weight: bolder;
+}
+
+.laptop-p1 {
+    font-size: 15px;
+    color: black;
+    padding: 7px 0;
+    opacity: 0.6;
+}
+
+.laptop-p2{
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: center;
+}
+
+.modal-container{
+    width: 900px;
+    background-color:white;
+    position: relative;
+    min-width: 200px;
+    max-width: 100%;
+    animation: modalhienthi ease 0.7s;
+}
+
+.modal-header{
+    padding: 32px 16px;
+    background-color:#009688;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.modal-icon{
+    margin-right: 16px;
+}
+
+.modal-js-close{
+    position: absolute;
+    font-size: 20px;
+    padding: 16px;
+    right: 0;
+}
+
+.modal-close:hover{
+    background-color:red ;
+}
+
+.label1{
+    margin-left: 6px;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+}
+
+.input1{
+    display: block;
+    margin: 10px;
+    padding: 10px 20px;
+    width: 95%;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.modal-button {
+    padding: 15px 0px;
+    margin: 20px;
+    background-color: #009688;
+    font-size: 25px;
+    font-weight: 600;
+    width: 95%;
+}
+
+.modal-text{
+    padding: 10px;
+    float: right;
+    font-size: 20px;
+}
+.modal-button:hover{
+    background-color:black;
+    color: lime;
+}
+
+
+@keyframes modalhienthi {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#contact #contact-about{
+    /* padding: 64px 16px 0 16px;
+    margin: 0 76px; */
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 64px;
+ }
+ 
+  .contact-heading{
+     text-align: center;
+     /* Căn giữa  */
+     margin: 10px 0px;
+     font-weight: 600;
+     font-size: 30px;
+     letter-spacing: 4px;
+     /* Khoảng cách giữa các chữ */
+     color:black;
+ }
+ 
+ .class-contact{
+    padding: 32px;
+    height: 500px;
+     
+ }
+
+.content-contact{
+    margin-top: 32px;
+    height: 200px;
+    padding: 32px ;
+
+}
+
+.icon-contact {
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.text-contact {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form3{
+    width: 100%;
+    padding: 8px 0;
+    margin-top: 10px;
+}
+
+.form1{
+    width: 100%;
+    padding: 8px 0;
+
+}
+
+.btn-submit{
+    margin-top: 10px;
+    padding: 10px 12px;
+    background-color: #000;
+    color: azure;
+    float: right;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+/* .submit:hover{
+    background-color: darkgray;
+    color: #000;
+
+} */
+
+.img-content-about{
+    width: 100%;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+    padding: 0 24px;
+}
+
+.map{
+    margin-top: 64px;
+}
+
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .icon-footer{
+    font-size: 20px;
+    letter-spacing: 4px; 
+}
+
+#footer .icon-footer:hover{
+    color: darkgray;
+}
+ 
+.end{
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.end a {
+    color: darkgray;
+}
+
+
+ 
+
+
+
+
+
+
+
