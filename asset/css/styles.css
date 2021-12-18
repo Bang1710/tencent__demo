@@ -72,7 +72,7 @@ html{
 #header{
     position: fixed;
     height: 50px;
-    background-color:gray ;
+    background-color:rgba(0,0,0,0.6) ;
     z-index: 2;
     top: 0;
     left: 0;
@@ -118,8 +118,8 @@ html{
 
 #nav >  li:hover > a,
 #nav .subnav > li:hover > a{
-    color:chartreuse;
-    background-color: black;
+    color: black;
+    background-color: #f5f0f0;
     display: block;
 }
 
@@ -132,9 +132,18 @@ html{
 }
  #nav .subnav a {
     /* color:chartreuse; */
-     padding: 0 10px;
+     padding: 0 20px;
      font-size: 15px;
      
+ }
+
+ .menu-level1 a {
+     color: black;
+ }
+
+.sub-subnav > .menu-level1:hover  {
+     background-color: black;
+     color: white;
  }
 
 /* Cấp 3 */
@@ -148,12 +157,12 @@ html{
 }
 
 .sub-subnav {
-    background-color: floralwhite;
+    background-color: white;
     display: none;
     position: absolute;
     top: 0;
     left: calc(100% + 1px);
-    min-width: 150px;
+    min-width: 180px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -163,7 +172,7 @@ html{
 
 .sub-subnav > li:hover >a{
     color:white;
-    background-color:gray;
+    background-color:black;
     display: block;
 }
 
@@ -197,8 +206,9 @@ html{
     top:0;
     right: 0px;
     padding: 0 25px;
-    background-color:rgb(136, 131, 131);
+    background-color:rgba(0,0,0,0.6);
     cursor: pointer;
+    color: white;
 }
 
 #search-icon .ti-scr{
@@ -216,17 +226,21 @@ html{
     top:0;
     right: 66px;
     line-height: 50px;
+    height: 100%;
 }
 
 .namesearch{
-    padding: 15px ;
+    padding: 16px;
+    height: 100%;
+    font-size: 1.1rem;
+    outline: none;
 }
 
 #slider {
-    padding-top: 67%;
-    background-image: url(https://trithucvn.org/wp-content/uploads/2020/08/tencent_shutterstock_1775180234.jpg);
+    padding-top: 71%;
+    background-image: url(../ảnh/cong-troi-1.jpg);
     background-position: top center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     margin-top: 50px;
